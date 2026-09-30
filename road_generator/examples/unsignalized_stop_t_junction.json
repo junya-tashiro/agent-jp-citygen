@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "junction",
+      "type": "stop_t_junction",
+      "position": [0, 0],
+      "crossings": ["east_west", "north_south"]
+    },
+    {"id": "west", "type": "boundary", "position": [-42, 0]},
+    {"id": "east", "type": "boundary", "position": [42, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -42]}
+  ],
+  "edges": [
+    {
+      "id": "through_west",
+      "from": "west",
+      "to": "junction",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_lights": false
+    },
+    {
+      "id": "through_east",
+      "from": "junction",
+      "to": "east",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_lights": false
+    },
+    {
+      "id": "stem",
+      "from": "south",
+      "to": "junction",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_lights": false,
+      "approaches": {"to": {"stop_control": true}}
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "roads": [
+    {"id": "east_west", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 3, "sidewalks": "both"},
+    {"id": "north_south", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 2, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "junction", "type": "signalized_cross", "position": [0, 0], "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "west", "type": "boundary", "position": [-85, 0]},
+    {"id": "east", "type": "boundary", "position": [85, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -85]},
+    {"id": "north", "type": "boundary", "position": [0, 85]}
+  ],
+  "edges": [
+    {"id": "west_arm", "road": "east_west", "from": "west", "to": "junction", "geometry": {"type": "line"}, "center_marking": "orange_solid"},
+    {"id": "east_arm", "road": "east_west", "from": "junction", "to": "east", "geometry": {"type": "line"}, "center_marking": "orange_solid"},
+    {"id": "south_arm", "road": "north_south", "from": "south", "to": "junction", "geometry": {"type": "line"}, "center_marking": "orange_solid"},
+    {"id": "north_arm", "road": "north_south", "from": "junction", "to": "north", "geometry": {"type": "line"}, "center_marking": "orange_solid"}
+  ]
+}

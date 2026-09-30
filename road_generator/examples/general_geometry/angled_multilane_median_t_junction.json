@@ -1,0 +1,90 @@
+{
+  "roads": [
+    {
+      "id": "through",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    },
+    {
+      "id": "stem",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "t",
+      "type": "signalized_t_junction",
+      "position": [0, 0],
+      "name": "斜め中央分離帯丁字路",
+      "roman_name": "Angled Median T",
+      "crossings": ["east_west", "north_south"],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "right"
+    },
+    {
+      "id": "west",
+      "type": "boundary",
+      "position": [-37.423461, -6.598583]
+    },
+    {
+      "id": "east",
+      "type": "boundary",
+      "position": [37.423461, 6.598583]
+    },
+    {
+      "id": "south",
+      "type": "boundary",
+      "position": [0, -38]
+    }
+  ],
+  "edges": [
+    {
+      "id": "through_west",
+      "road": "through",
+      "from": "t",
+      "to": "west",
+      "geometry": {"type": "line"},
+      "median": true,
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true},
+      "street_trees": {"enabled": true, "random": true},
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "through_east",
+      "road": "through",
+      "from": "t",
+      "to": "east",
+      "geometry": {"type": "line"},
+      "median": true,
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true},
+      "street_trees": {"enabled": true, "random": true},
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "stem_south",
+      "road": "stem",
+      "from": "t",
+      "to": "south",
+      "geometry": {"type": "line"},
+      "median": true,
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true},
+      "street_trees": {"enabled": true, "random": true},
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    }
+  ]
+}

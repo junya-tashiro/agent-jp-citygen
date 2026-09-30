@@ -1,0 +1,222 @@
+{
+  "roads": [
+    {
+      "id": "curved",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "diagonal",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "w",
+      "type": "boundary",
+      "position": [
+        -55,
+        -5
+      ]
+    },
+    {
+      "id": "c",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "混合線形",
+      "roman_name": "Mixed Geometry",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "e",
+      "type": "boundary",
+      "position": [
+        55,
+        -5
+      ]
+    },
+    {
+      "id": "curve_w_start",
+      "type": "boundary",
+      "position": [-18, 0]
+    },
+    {
+      "id": "curve_e_start",
+      "type": "boundary",
+      "position": [18, 0]
+    },
+    {
+      "id": "s",
+      "type": "boundary",
+      "position": [
+        -7,
+        -42
+      ]
+    },
+    {
+      "id": "n",
+      "type": "boundary",
+      "position": [
+        7,
+        42
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "curved_w_lead",
+      "road": "curved",
+      "from": "c",
+      "to": "curve_w_start",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "curved_w",
+      "road": "curved",
+      "from": "curve_w_start",
+      "to": "w",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [-28, 0],
+        "control_to": [-43, -5]
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "curved_e_lead",
+      "road": "curved",
+      "from": "c",
+      "to": "curve_e_start",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "curved_e",
+      "road": "curved",
+      "from": "curve_e_start",
+      "to": "e",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [28, 0],
+        "control_to": [43, -5]
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "diagonal_s",
+      "road": "diagonal",
+      "from": "c",
+      "to": "s",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    },
+    {
+      "id": "diagonal_n",
+      "road": "diagonal",
+      "from": "c",
+      "to": "n",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    }
+  ]
+}

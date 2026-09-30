@@ -1,0 +1,6 @@
+scenes/
+__pycache__/
+*.pyc
+*.blend*
+node_modules/
+.DS_Store

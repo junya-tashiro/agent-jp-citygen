@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "seed": 19,
+  "bounds": [
+    -180,
+    -120,
+    180,
+    120
+  ],
+  "roads": [
+    {
+      "id": "avenue",
+      "points": [
+        [
+          -180,
+          0
+        ],
+        [
+          180,
+          0
+        ]
+      ],
+      "style": {
+        "lanes_each_way": 2,
+        "center_treatment": "median",
+        "median_width": "wide",
+        "speed_limit": 40
+      }
+    },
+    {
+      "id": "cross",
+      "points": [
+        [
+          0,
+          -120
+        ],
+        [
+          0,
+          120
+        ]
+      ]
+    }
+  ],
+  "buildings": {
+    "count": 18
+  },
+  "placements": [
+    {
+      "id": "garage",
+      "key": "building_25",
+      "edge": "avenue_edge_1_1",
+      "station": 66,
+      "side": "left",
+      "seed": 19,
+      "design": {
+        "width": 38,
+        "depth": 42
+      }
+    },
+    {
+      "id": "coin",
+      "type": "coin_parking",
+      "width": 18,
+      "depth": 24,
+      "edge": "avenue_edge_2_2",
+      "station": 78,
+      "side": "left"
+    }
+  ],
+  "subways": [
+    {
+      "id": "stairs",
+      "variant": "stairs",
+      "station_name": "都心",
+      "station_roman": "Toshin",
+      "width": 3,
+      "position": [
+        -110,
+        -13.399
+      ],
+      "rotation_degrees": 90,
+      "routes": [
+        {
+          "code": "M11",
+          "color": "#E53935"
+        }
+      ]
+    },
+    {
+      "id": "lift",
+      "variant": "elevator",
+      "station_name": "都心",
+      "station_roman": "Toshin",
+      "width": 3,
+      "position": [
+        105,
+        -13.399
+      ],
+      "rotation_degrees": 90,
+      "routes": [
+        {
+          "code": "M11",
+          "color": "#E53935"
+        }
+      ]
+    }
+  ]
+}

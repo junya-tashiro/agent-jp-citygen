@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {"id": "west_row_1", "type": "boundary", "position": [-50, 30]},
+    {"id": "west_row_2", "type": "boundary", "position": [-50, 0]},
+    {"id": "west_row_3", "type": "boundary", "position": [-50, -30]},
+    {"id": "east_row_1", "type": "boundary", "position": [50, 30]},
+    {"id": "east_row_2", "type": "boundary", "position": [50, 0]},
+    {"id": "east_row_3", "type": "boundary", "position": [50, -30]},
+    {"id": "north_col_1", "type": "boundary", "position": [-30, 50]},
+    {"id": "north_col_2", "type": "boundary", "position": [0, 50]},
+    {"id": "north_col_3", "type": "boundary", "position": [30, 50]},
+    {"id": "south_col_1", "type": "boundary", "position": [-30, -50]},
+    {"id": "south_col_2", "type": "boundary", "position": [0, -50]},
+    {"id": "south_col_3", "type": "boundary", "position": [30, -50]},
+
+    {"id": "block_1", "type": "signalized_cross", "position": [-30, 30], "name": "一丁目", "roman_name": "1-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "block_2", "type": "signalized_cross", "position": [0, 30], "name": "二丁目", "roman_name": "2-chome", "crossings": ["east_west", "north_south"], "signal_phase": "north_south_green"},
+    {"id": "block_3", "type": "signalized_cross", "position": [30, 30], "name": "三丁目", "roman_name": "3-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "block_4", "type": "signalized_cross", "position": [-30, 0], "name": "四丁目", "roman_name": "4-chome", "crossings": ["east_west", "north_south"], "signal_phase": "north_south_green"},
+    {"id": "block_5", "type": "signalized_cross", "position": [0, 0], "name": "五丁目", "roman_name": "5-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "block_6", "type": "signalized_cross", "position": [30, 0], "name": "六丁目", "roman_name": "6-chome", "crossings": ["east_west", "north_south"], "signal_phase": "north_south_green"},
+    {"id": "block_7", "type": "signalized_cross", "position": [-30, -30], "name": "七丁目", "roman_name": "7-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "block_8", "type": "signalized_cross", "position": [0, -30], "name": "八丁目", "roman_name": "8-chome", "crossings": ["east_west", "north_south"], "signal_phase": "north_south_green"},
+    {"id": "block_9", "type": "signalized_cross", "position": [30, -30], "name": "九丁目", "roman_name": "9-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"}
+  ],
+  "edges": [
+    {"id": "row1_w", "from": "west_row_1", "to": "block_1", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row1_12", "from": "block_1", "to": "block_2", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row1_23", "from": "block_2", "to": "block_3", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row1_e", "from": "block_3", "to": "east_row_1", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row2_w", "from": "west_row_2", "to": "block_4", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row2_45", "from": "block_4", "to": "block_5", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row2_56", "from": "block_5", "to": "block_6", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row2_e", "from": "block_6", "to": "east_row_2", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row3_w", "from": "west_row_3", "to": "block_7", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row3_78", "from": "block_7", "to": "block_8", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row3_89", "from": "block_8", "to": "block_9", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "row3_e", "from": "block_9", "to": "east_row_3", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+
+    {"id": "col1_n", "from": "north_col_1", "to": "block_1", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col1_14", "from": "block_1", "to": "block_4", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col1_47", "from": "block_4", "to": "block_7", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col1_s", "from": "block_7", "to": "south_col_1", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col2_n", "from": "north_col_2", "to": "block_2", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col2_25", "from": "block_2", "to": "block_5", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col2_58", "from": "block_5", "to": "block_8", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col2_s", "from": "block_8", "to": "south_col_2", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col3_n", "from": "north_col_3", "to": "block_3", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col3_36", "from": "block_3", "to": "block_6", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col3_69", "from": "block_6", "to": "block_9", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "col3_s", "from": "block_9", "to": "south_col_3", "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"}
+  ]
+}

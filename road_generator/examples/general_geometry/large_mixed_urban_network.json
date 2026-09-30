@@ -1,0 +1,1135 @@
+{
+  "nodes": [
+    {
+      "id": "west_row_1",
+      "type": "boundary",
+      "position": [
+        -130,
+        -58
+      ]
+    },
+    {
+      "id": "east_row_1",
+      "type": "boundary",
+      "position": [
+        75,
+        -52
+      ]
+    },
+    {
+      "id": "west_row_2",
+      "type": "boundary",
+      "position": [
+        -75,
+        0
+      ]
+    },
+    {
+      "id": "block_10",
+      "type": "signalized_cross",
+      "position": [
+        104,
+        8
+      ],
+      "name": "十丁目",
+      "roman_name": "10-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_b_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "right"
+    },
+    {
+      "id": "west_row_3",
+      "type": "boundary",
+      "position": [
+        -75,
+        52
+      ]
+    },
+    {
+      "id": "east_row_3",
+      "type": "boundary",
+      "position": [
+        75,
+        52
+      ]
+    },
+    {
+      "id": "north_col_1",
+      "type": "boundary",
+      "position": [
+        -52,
+        75
+      ]
+    },
+    {
+      "id": "south_col_1",
+      "type": "boundary",
+      "position": [
+        -52,
+        -75
+      ]
+    },
+    {
+      "id": "north_col_2",
+      "type": "boundary",
+      "position": [
+        0,
+        75
+      ]
+    },
+    {
+      "id": "south_col_2",
+      "type": "boundary",
+      "position": [
+        0,
+        -75
+      ]
+    },
+    {
+      "id": "north_col_3",
+      "type": "boundary",
+      "position": [
+        58,
+        130
+      ]
+    },
+    {
+      "id": "south_col_3",
+      "type": "boundary",
+      "position": [
+        52,
+        -75
+      ]
+    },
+    {
+      "id": "block_1",
+      "type": "signalized_cross",
+      "position": [
+        -52,
+        -52
+      ],
+      "name": "一丁目",
+      "roman_name": "1-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "block_2",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        -52
+      ],
+      "name": "二丁目",
+      "roman_name": "2-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_3",
+      "type": "signalized_cross",
+      "position": [
+        52,
+        -52
+      ],
+      "name": "三丁目",
+      "roman_name": "3-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "block_4",
+      "type": "signalized_cross",
+      "position": [
+        -52,
+        0
+      ],
+      "name": "四丁目",
+      "roman_name": "4-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "block_5",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "五丁目",
+      "roman_name": "5-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_right_arrow",
+      "exterior_color": "brown",
+      "vehicle_arrow": "right"
+    },
+    {
+      "id": "block_6",
+      "type": "signalized_cross",
+      "position": [
+        52,
+        0
+      ],
+      "name": "六丁目",
+      "roman_name": "6-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "block_7",
+      "type": "signalized_cross",
+      "position": [
+        -52,
+        52
+      ],
+      "name": "七丁目",
+      "roman_name": "7-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_8",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        52
+      ],
+      "name": "八丁目",
+      "roman_name": "8-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "block_9",
+      "type": "signalized_cross",
+      "position": [
+        52,
+        52
+      ],
+      "name": "九丁目",
+      "roman_name": "9-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "east_row_2_boundary",
+      "type": "boundary",
+      "position": [
+        140,
+        14
+      ]
+    },
+    {
+      "id": "block_10_south",
+      "type": "boundary",
+      "position": [
+        111,
+        -32
+      ]
+    },
+    {
+      "id": "block_10_north",
+      "type": "boundary",
+      "position": [
+        97,
+        48
+      ]
+    },
+    {
+      "id": "row1_curve_join",
+      "type": "boundary",
+      "position": [
+        -72,
+        -52
+      ]
+    },
+    {
+      "id": "col3_curve_join",
+      "type": "boundary",
+      "position": [
+        52,
+        72
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "row1_west",
+      "from": "row1_curve_join",
+      "to": "block_1",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.0,
+        "seed": 2027691200
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row1",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "row1_1_2",
+      "from": "block_1",
+      "to": "block_2",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.89,
+        "seed": 1595354702
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row1"
+    },
+    {
+      "id": "row1_2_3",
+      "from": "block_2",
+      "to": "block_3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "curb_parking_prohibition": true,
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "bicycle_lane": true,
+      "road": "row1"
+    },
+    {
+      "id": "row1_east",
+      "from": "block_3",
+      "to": "east_row_1",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.81,
+        "seed": 1775573246
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row1"
+    },
+    {
+      "id": "row2_west",
+      "from": "west_row_2",
+      "to": "block_4",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 1.01,
+        "seed": 704225832
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row2"
+    },
+    {
+      "id": "row2_1_2",
+      "from": "block_4",
+      "to": "block_5",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "bicycle_lane": true,
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "curb_parking_prohibition": true,
+      "road": "row2"
+    },
+    {
+      "id": "row2_2_3",
+      "from": "block_5",
+      "to": "block_6",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 0.8,
+        "seed": 382193402
+      },
+      "bicycle_lane": true,
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "curb_parking_prohibition": true,
+      "road": "row2"
+    },
+    {
+      "id": "row2_east",
+      "from": "block_6",
+      "to": "block_10",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.22,
+        "seed": 1366004399
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row2",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "row3_west",
+      "from": "west_row_3",
+      "to": "block_7",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 1.29,
+        "seed": 1256990088
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row3"
+    },
+    {
+      "id": "row3_1_2",
+      "from": "block_7",
+      "to": "block_8",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.79,
+        "seed": 42998692
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": false,
+      "curb_parking_prohibition": true,
+      "road": "row3"
+    },
+    {
+      "id": "row3_2_3",
+      "from": "block_8",
+      "to": "block_9",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.91,
+        "seed": 74656420
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row3"
+    },
+    {
+      "id": "row3_east",
+      "from": "block_9",
+      "to": "east_row_3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.12,
+        "seed": 672744904
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row3"
+    },
+    {
+      "id": "col1_north",
+      "from": "north_col_1",
+      "to": "block_7",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col1"
+    },
+    {
+      "id": "col1_1_2",
+      "from": "block_1",
+      "to": "block_4",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.07,
+        "seed": 1601154631
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col1"
+    },
+    {
+      "id": "col1_2_3",
+      "from": "block_4",
+      "to": "block_7",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.92,
+        "seed": 464310863
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col1"
+    },
+    {
+      "id": "col1_south",
+      "from": "block_1",
+      "to": "south_col_1",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.89,
+        "seed": 1112266000
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col1"
+    },
+    {
+      "id": "col2_north",
+      "from": "north_col_2",
+      "to": "block_8",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.87,
+        "seed": 1283952509
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col2"
+    },
+    {
+      "id": "col2_1_2",
+      "from": "block_2",
+      "to": "block_5",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.04,
+        "seed": 126849758
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "curb_parking_prohibition": true,
+      "road": "col2"
+    },
+    {
+      "id": "col2_2_3",
+      "from": "block_5",
+      "to": "block_8",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.16,
+        "seed": 777795990
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "bicycle_lane": true,
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "curb_parking_prohibition": true,
+      "road": "col2"
+    },
+    {
+      "id": "col2_south",
+      "from": "block_2",
+      "to": "south_col_2",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 0.85,
+        "seed": 1944690073
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": false,
+      "curb_parking_prohibition": true,
+      "road": "col2"
+    },
+    {
+      "id": "col3_north",
+      "from": "col3_curve_join",
+      "to": "block_9",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.2,
+        "seed": 1609910987
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col3",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "col3_1_2",
+      "from": "block_3",
+      "to": "block_6",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "ginkgo",
+        "density": 0.81,
+        "seed": 132751349
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col3"
+    },
+    {
+      "id": "col3_2_3",
+      "from": "block_6",
+      "to": "block_9",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 0.85,
+        "seed": 1831239876
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col3"
+    },
+    {
+      "id": "col3_south",
+      "from": "block_3",
+      "to": "south_col_3",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col3"
+    },
+    {
+      "id": "row1_outer_curve",
+      "from": "west_row_1",
+      "to": "row1_curve_join",
+      "road_class": "arterial",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.0,
+        "seed": 2027691200
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row1",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [
+          -112,
+          -58
+        ],
+        "control_to": [
+          -92,
+          -52
+        ]
+      }
+    },
+    {
+      "id": "col3_outer_curve",
+      "from": "north_col_3",
+      "to": "col3_curve_join",
+      "road_class": "collector",
+      "speed_limit": 30,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.2,
+        "seed": 1609910987
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "col3",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [
+          58,
+          112
+        ],
+        "control_to": [
+          52,
+          92
+        ]
+      }
+    },
+    {
+      "id": "row2_east_outer",
+      "from": "block_10",
+      "to": "east_row_2_boundary",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "median": true,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "cherry",
+        "density": 1.22,
+        "seed": 1366004399
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "row2",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "diagonal10_south",
+      "from": "block_10_south",
+      "to": "block_10",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.2,
+        "seed": 1609910987
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "diagonal10",
+      "geometry": {
+        "type": "line"
+      },
+      "median": true
+    },
+    {
+      "id": "diagonal10_north",
+      "from": "block_10",
+      "to": "block_10_north",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both",
+      "street_trees": {
+        "enabled": true,
+        "species": "keyaki",
+        "density": 1.2,
+        "seed": 1609910987
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "density": 0.82,
+        "maintenance": 0.7,
+        "health": 0.88
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "road": "diagonal10",
+      "geometry": {
+        "type": "line"
+      },
+      "median": true
+    }
+  ],
+  "roads": [
+    {
+      "id": "row1",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both"
+    },
+    {
+      "id": "diagonal10",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 3,
+      "sidewalks": "both"
+    }
+  ]
+}

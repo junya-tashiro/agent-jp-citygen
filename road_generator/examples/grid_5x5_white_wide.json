@@ -1,0 +1,1106 @@
+{
+  "nodes": [
+    {
+      "id": "west_row_1",
+      "type": "boundary",
+      "position": [
+        -240,
+        -180
+      ]
+    },
+    {
+      "id": "east_row_1",
+      "type": "boundary",
+      "position": [
+        240,
+        -180
+      ]
+    },
+    {
+      "id": "west_row_2",
+      "type": "boundary",
+      "position": [
+        -240,
+        -90
+      ]
+    },
+    {
+      "id": "east_row_2",
+      "type": "boundary",
+      "position": [
+        240,
+        -90
+      ]
+    },
+    {
+      "id": "west_row_3",
+      "type": "boundary",
+      "position": [
+        -240,
+        0
+      ]
+    },
+    {
+      "id": "east_row_3",
+      "type": "boundary",
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "id": "west_row_4",
+      "type": "boundary",
+      "position": [
+        -240,
+        90
+      ]
+    },
+    {
+      "id": "east_row_4",
+      "type": "boundary",
+      "position": [
+        240,
+        90
+      ]
+    },
+    {
+      "id": "west_row_5",
+      "type": "boundary",
+      "position": [
+        -240,
+        180
+      ]
+    },
+    {
+      "id": "east_row_5",
+      "type": "boundary",
+      "position": [
+        240,
+        180
+      ]
+    },
+    {
+      "id": "north_col_1",
+      "type": "boundary",
+      "position": [
+        -180,
+        240
+      ]
+    },
+    {
+      "id": "south_col_1",
+      "type": "boundary",
+      "position": [
+        -180,
+        -240
+      ]
+    },
+    {
+      "id": "north_col_2",
+      "type": "boundary",
+      "position": [
+        -90,
+        240
+      ]
+    },
+    {
+      "id": "south_col_2",
+      "type": "boundary",
+      "position": [
+        -90,
+        -240
+      ]
+    },
+    {
+      "id": "north_col_3",
+      "type": "boundary",
+      "position": [
+        0,
+        240
+      ]
+    },
+    {
+      "id": "south_col_3",
+      "type": "boundary",
+      "position": [
+        0,
+        -240
+      ]
+    },
+    {
+      "id": "north_col_4",
+      "type": "boundary",
+      "position": [
+        90,
+        240
+      ]
+    },
+    {
+      "id": "south_col_4",
+      "type": "boundary",
+      "position": [
+        90,
+        -240
+      ]
+    },
+    {
+      "id": "north_col_5",
+      "type": "boundary",
+      "position": [
+        180,
+        240
+      ]
+    },
+    {
+      "id": "south_col_5",
+      "type": "boundary",
+      "position": [
+        180,
+        -240
+      ]
+    },
+    {
+      "id": "block_1",
+      "type": "signalized_cross",
+      "position": [
+        -180,
+        -180
+      ],
+      "name": "一丁目",
+      "roman_name": "1-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_2",
+      "type": "signalized_cross",
+      "position": [
+        -90,
+        -180
+      ],
+      "name": "二丁目",
+      "roman_name": "2-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_3",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        -180
+      ],
+      "name": "三丁目",
+      "roman_name": "3-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_4",
+      "type": "signalized_cross",
+      "position": [
+        90,
+        -180
+      ],
+      "name": "四丁目",
+      "roman_name": "4-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_5",
+      "type": "signalized_cross",
+      "position": [
+        180,
+        -180
+      ],
+      "name": "五丁目",
+      "roman_name": "5-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_6",
+      "type": "signalized_cross",
+      "position": [
+        -180,
+        -90
+      ],
+      "name": "六丁目",
+      "roman_name": "6-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_7",
+      "type": "signalized_cross",
+      "position": [
+        -90,
+        -90
+      ],
+      "name": "七丁目",
+      "roman_name": "7-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_8",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        -90
+      ],
+      "name": "八丁目",
+      "roman_name": "8-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_9",
+      "type": "signalized_cross",
+      "position": [
+        90,
+        -90
+      ],
+      "name": "九丁目",
+      "roman_name": "9-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_10",
+      "type": "signalized_cross",
+      "position": [
+        180,
+        -90
+      ],
+      "name": "十丁目",
+      "roman_name": "10-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_11",
+      "type": "signalized_cross",
+      "position": [
+        -180,
+        0
+      ],
+      "name": "十一丁目",
+      "roman_name": "11-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_12",
+      "type": "signalized_cross",
+      "position": [
+        -90,
+        0
+      ],
+      "name": "十二丁目",
+      "roman_name": "12-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_13",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "十三丁目",
+      "roman_name": "13-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_14",
+      "type": "signalized_cross",
+      "position": [
+        90,
+        0
+      ],
+      "name": "十四丁目",
+      "roman_name": "14-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_15",
+      "type": "signalized_cross",
+      "position": [
+        180,
+        0
+      ],
+      "name": "十五丁目",
+      "roman_name": "15-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_16",
+      "type": "signalized_cross",
+      "position": [
+        -180,
+        90
+      ],
+      "name": "十六丁目",
+      "roman_name": "16-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_17",
+      "type": "signalized_cross",
+      "position": [
+        -90,
+        90
+      ],
+      "name": "十七丁目",
+      "roman_name": "17-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_18",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        90
+      ],
+      "name": "十八丁目",
+      "roman_name": "18-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_19",
+      "type": "signalized_cross",
+      "position": [
+        90,
+        90
+      ],
+      "name": "十九丁目",
+      "roman_name": "19-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_20",
+      "type": "signalized_cross",
+      "position": [
+        180,
+        90
+      ],
+      "name": "二十丁目",
+      "roman_name": "20-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_21",
+      "type": "signalized_cross",
+      "position": [
+        -180,
+        180
+      ],
+      "name": "二十一丁目",
+      "roman_name": "21-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_22",
+      "type": "signalized_cross",
+      "position": [
+        -90,
+        180
+      ],
+      "name": "二十二丁目",
+      "roman_name": "22-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_23",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        180
+      ],
+      "name": "二十三丁目",
+      "roman_name": "23-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_24",
+      "type": "signalized_cross",
+      "position": [
+        90,
+        180
+      ],
+      "name": "二十四丁目",
+      "roman_name": "24-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "north_south_green",
+      "exterior_color": "white"
+    },
+    {
+      "id": "block_25",
+      "type": "signalized_cross",
+      "position": [
+        180,
+        180
+      ],
+      "name": "二十五丁目",
+      "roman_name": "25-chome",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    }
+  ],
+  "edges": [
+    {
+      "id": "row1_west",
+      "from": "west_row_1",
+      "to": "block_1",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row1_1_2",
+      "from": "block_1",
+      "to": "block_2",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row1_2_3",
+      "from": "block_2",
+      "to": "block_3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row1_3_4",
+      "from": "block_3",
+      "to": "block_4",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row1_4_5",
+      "from": "block_4",
+      "to": "block_5",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row1_east",
+      "from": "block_5",
+      "to": "east_row_1",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_west",
+      "from": "west_row_2",
+      "to": "block_6",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_1_2",
+      "from": "block_6",
+      "to": "block_7",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_2_3",
+      "from": "block_7",
+      "to": "block_8",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_3_4",
+      "from": "block_8",
+      "to": "block_9",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_4_5",
+      "from": "block_9",
+      "to": "block_10",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row2_east",
+      "from": "block_10",
+      "to": "east_row_2",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_west",
+      "from": "west_row_3",
+      "to": "block_11",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_1_2",
+      "from": "block_11",
+      "to": "block_12",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_2_3",
+      "from": "block_12",
+      "to": "block_13",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_3_4",
+      "from": "block_13",
+      "to": "block_14",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_4_5",
+      "from": "block_14",
+      "to": "block_15",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row3_east",
+      "from": "block_15",
+      "to": "east_row_3",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_west",
+      "from": "west_row_4",
+      "to": "block_16",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_1_2",
+      "from": "block_16",
+      "to": "block_17",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_2_3",
+      "from": "block_17",
+      "to": "block_18",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_3_4",
+      "from": "block_18",
+      "to": "block_19",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_4_5",
+      "from": "block_19",
+      "to": "block_20",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row4_east",
+      "from": "block_20",
+      "to": "east_row_4",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_west",
+      "from": "west_row_5",
+      "to": "block_21",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_1_2",
+      "from": "block_21",
+      "to": "block_22",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_2_3",
+      "from": "block_22",
+      "to": "block_23",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_3_4",
+      "from": "block_23",
+      "to": "block_24",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_4_5",
+      "from": "block_24",
+      "to": "block_25",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "row5_east",
+      "from": "block_25",
+      "to": "east_row_5",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_north",
+      "from": "north_col_1",
+      "to": "block_21",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_1_2",
+      "from": "block_1",
+      "to": "block_6",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_2_3",
+      "from": "block_6",
+      "to": "block_11",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_3_4",
+      "from": "block_11",
+      "to": "block_16",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_4_5",
+      "from": "block_16",
+      "to": "block_21",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col1_south",
+      "from": "block_1",
+      "to": "south_col_1",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_north",
+      "from": "north_col_2",
+      "to": "block_22",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_1_2",
+      "from": "block_2",
+      "to": "block_7",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_2_3",
+      "from": "block_7",
+      "to": "block_12",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_3_4",
+      "from": "block_12",
+      "to": "block_17",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_4_5",
+      "from": "block_17",
+      "to": "block_22",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col2_south",
+      "from": "block_2",
+      "to": "south_col_2",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_north",
+      "from": "north_col_3",
+      "to": "block_23",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_1_2",
+      "from": "block_3",
+      "to": "block_8",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_2_3",
+      "from": "block_8",
+      "to": "block_13",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_3_4",
+      "from": "block_13",
+      "to": "block_18",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_4_5",
+      "from": "block_18",
+      "to": "block_23",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col3_south",
+      "from": "block_3",
+      "to": "south_col_3",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_north",
+      "from": "north_col_4",
+      "to": "block_24",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_1_2",
+      "from": "block_4",
+      "to": "block_9",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_2_3",
+      "from": "block_9",
+      "to": "block_14",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_3_4",
+      "from": "block_14",
+      "to": "block_19",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_4_5",
+      "from": "block_19",
+      "to": "block_24",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col4_south",
+      "from": "block_4",
+      "to": "south_col_4",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_north",
+      "from": "north_col_5",
+      "to": "block_25",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_1_2",
+      "from": "block_5",
+      "to": "block_10",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_2_3",
+      "from": "block_10",
+      "to": "block_15",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_3_4",
+      "from": "block_15",
+      "to": "block_20",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_4_5",
+      "from": "block_20",
+      "to": "block_25",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "col5_south",
+      "from": "block_5",
+      "to": "south_col_5",
+      "road_class": "collector",
+      "speed_limit": 40,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "seed": 42,
+  "bounds": [-100, -100, 100, 100],
+  "roads": [
+    {"id":"avenue", "points":[[-100,0],[100,0]], "style":{"lanes_each_way":2,"center_treatment":"median","median_width":"wide","speed_limit":40}},
+    {"id":"local_north", "points":[[-100,60],[100,60]]},
+    {"id":"local_cross", "points":[[0,-100],[0,100]]}
+  ],
+  "junctions":[{"at":[0,60],"style":{"signal_control":"unsignalized"}}],
+  "buildings":{"count":24,"rounded_fraction":0.1,"gap":1,"detail":"medium"},
+  "placements":[],
+  "subways":[]
+}

@@ -1,0 +1,105 @@
+{
+  "roads": [
+    {
+      "id": "avenue",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "west",
+      "type": "boundary",
+      "position": [
+        -45,
+        0
+      ]
+    },
+    {
+      "id": "east",
+      "type": "boundary",
+      "position": [
+        45,
+        0
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "avenue_main",
+      "road": "avenue",
+      "from": "west",
+      "to": "east",
+      "geometry": {
+        "type": "line"
+      },
+      "median": true,
+      "median_width": "wide",
+      "tactile_paving": true,
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      }
+    }
+  ],
+  "context": {
+    "subway_entrances": [
+      {
+        "id": "stairs_a1",
+        "variant": "stairs",
+        "station_name": "中央",
+        "station_roman": "Chuo",
+        "exit_label": "A1",
+        "width": 3.0,
+        "position": [
+          -17,
+          13.399
+        ],
+        "rotation_degrees": -90,
+        "routes": [
+          {
+            "code": "M15",
+            "color": "#E53935"
+          },
+          {
+            "code": "H07",
+            "color": "#9CA5A9"
+          },
+          {
+            "code": "C08",
+            "color": "#00A568"
+          }
+        ]
+      },
+      {
+        "id": "elevator_a2",
+        "variant": "elevator",
+        "station_name": "中央",
+        "station_roman": "Chuo",
+        "exit_label": "A2",
+        "width": 3.0,
+        "position": [
+          7,
+          13.399
+        ],
+        "rotation_degrees": -90,
+        "routes": [
+          {
+            "code": "M15",
+            "color": "#E53935"
+          },
+          {
+            "code": "H07",
+            "color": "#9CA5A9"
+          },
+          {
+            "code": "C08",
+            "color": "#00A568"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "seed": 83,
+  "bounds": [
+    -150,
+    -100,
+    150,
+    100
+  ],
+  "roads": [
+    {
+      "id": "curve",
+      "points": [
+        [
+          -150,
+          -25
+        ],
+        [
+          -75,
+          -10
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          75,
+          20
+        ],
+        [
+          150,
+          15
+        ]
+      ],
+      "style": {
+        "lanes_each_way": 2,
+        "center_treatment": "median",
+        "median_width": "wide",
+        "speed_limit": 30
+      }
+    }
+  ],
+  "buildings": {
+    "count": 14
+  },
+  "placements": [],
+  "subways": []
+}

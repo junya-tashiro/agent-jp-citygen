@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {"id": "west_end", "type": "boundary", "position": [-62, 0]},
+    {
+      "id": "kasumigaseki", "type": "signalized_cross", "position": [-24, 0],
+      "name": "中 央", "roman_name": "Chuo", "crossings": ["east_west", "north_south"],
+      "signal_phase": "east_west_green"
+    },
+    {"id": "pedestrian_crossing", "type": "signalized_pedestrian_crossing", "position": [24, 0], "crossings": ["north_south"], "signal_phase": "pedestrian_green"},
+    {"id": "east_end", "type": "boundary", "position": [62, 0]},
+    {"id": "south_end", "type": "boundary", "position": [-24, -30]},
+    {"id": "t_junction", "type": "stop_t_junction", "position": [-24, 30],
+     "crossings": ["east_west", "north_south"]},
+    {"id": "t_west_end", "type": "boundary", "position": [-55, 30]},
+    {"id": "t_east_end", "type": "boundary", "position": [7, 30]}
+  ],
+  "context": {
+    "buildings": [
+      {"id": "west_south", "position": [-49, -10], "size": [7, 5], "height": 5, "roof_tilt_degrees": -5},
+      {"id": "central_north", "position": [-8, 13], "size": [6, 5], "height": 6, "roof_tilt_degrees": 5},
+      {"id": "middle_north", "position": [12, 12], "size": [7, 5], "height": 4.5, "roof_tilt_degrees": -5},
+      {"id": "east_north", "position": [44, 10], "size": [8, 5], "height": 5.5, "roof_tilt_degrees": 5},
+      {"id": "east_south", "position": [46, -11], "size": [7, 5], "height": 4.2, "roof_tilt_degrees": -5},
+      {"id": "northwest", "position": [-44, 41], "size": [7, 5], "height": 4.8, "roof_tilt_degrees": 5}
+    ]
+  },
+  "edges": [
+    {
+      "id": "main_west", "from": "west_end", "to": "kasumigaseki",
+      "road_class": "arterial", "speed_limit": 50, "lanes_each_way": 1, "sidewalks": "both"
+    },
+    {
+      "id": "main_middle", "from": "kasumigaseki", "to": "pedestrian_crossing",
+      "road_class": "arterial", "speed_limit": 50, "lanes_each_way": 1, "sidewalks": "both",
+      "guardrail": {"sides": "right", "exterior_color": "white"}
+    },
+    {
+      "id": "main_east", "from": "pedestrian_crossing", "to": "east_end",
+      "road_class": "arterial", "speed_limit": 50, "lanes_each_way": 1, "sidewalks": "both"
+    },
+    {
+      "id": "cross_south", "from": "south_end", "to": "kasumigaseki",
+      "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both"
+    },
+    {
+      "id": "cross_north", "from": "kasumigaseki", "to": "t_junction",
+      "road_class": "collector", "speed_limit": 40, "lanes_each_way": 1, "sidewalks": "both",
+      "approaches": {"to": {"stop_control": true}}
+    },
+    {
+      "id": "t_west", "from": "t_west_end", "to": "t_junction",
+      "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"
+    },
+    {
+      "id": "t_east", "from": "t_junction", "to": "t_east_end",
+      "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"
+    }
+  ]
+}

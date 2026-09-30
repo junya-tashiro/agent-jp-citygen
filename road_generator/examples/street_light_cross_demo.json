@@ -1,0 +1,30 @@
+{
+  "scene": {"time_of_day": "night"},
+  "roads": [
+    {"id": "east_west", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 2, "sidewalks": "both"},
+    {"id": "north_south", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 2, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "west", "type": "boundary", "position": [-130, 0]},
+    {"id": "east", "type": "boundary", "position": [130, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -130]},
+    {"id": "north", "type": "boundary", "position": [0, 130]},
+    {
+      "id": "central_cross",
+      "type": "signalized_cross",
+      "position": [0, 0],
+      "name": "街灯通り",
+      "roman_name": "Street Light Ave.",
+      "crossings": ["east_west", "north_south"],
+      "signal_phase": "east_west_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "right"
+    }
+  ],
+  "edges": [
+    {"id": "west_arm", "road": "east_west", "from": "west", "to": "central_cross", "median": true, "street_lights": true, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true, "style": "clipped_hedge", "seed": 101}, "street_trees": {"enabled": true, "species": "keyaki", "density": 1.0, "seed": 201}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "east_arm", "road": "east_west", "from": "central_cross", "to": "east", "median": true, "street_lights": true, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true, "style": "clipped_hedge", "seed": 102}, "street_trees": {"enabled": true, "species": "ginkgo", "density": 1.0, "seed": 202}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "south_arm", "road": "north_south", "from": "south", "to": "central_cross", "median": true, "street_lights": true, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true, "style": "clipped_hedge", "seed": 103}, "street_trees": {"enabled": true, "species": "ginkgo", "density": 1.0, "seed": 203}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "north_arm", "road": "north_south", "from": "central_cross", "to": "north", "median": true, "street_lights": true, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true, "style": "clipped_hedge", "seed": 104}, "street_trees": {"enabled": true, "species": "keyaki", "density": 1.0, "seed": 204}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true}
+  ]
+}

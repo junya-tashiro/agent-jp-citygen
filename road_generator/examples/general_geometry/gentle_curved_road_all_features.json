@@ -1,0 +1,62 @@
+{
+  "roads": [
+    {
+      "id": "road",
+      "road_class": "local",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a",
+      "type": "boundary",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "b",
+      "type": "boundary",
+      "position": [
+        80,
+        0
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "road_edge",
+      "road": "road",
+      "from": "a",
+      "to": "b",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [
+          25,
+          7
+        ],
+        "control_to": [
+          55,
+          7
+        ]
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    }
+  ]
+}

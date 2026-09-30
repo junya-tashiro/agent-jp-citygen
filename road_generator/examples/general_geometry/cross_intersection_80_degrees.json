@@ -1,0 +1,107 @@
+{
+  "roads": [
+    {
+      "id": "main",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "cross",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "c",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "一般角交差点",
+      "roman_name": "General Junction",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "none"
+    },
+    {
+      "id": "m1",
+      "type": "boundary",
+      "position": [
+        -36,
+        0
+      ]
+    },
+    {
+      "id": "m2",
+      "type": "boundary",
+      "position": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": "x1",
+      "type": "boundary",
+      "position": [
+        -6.251,
+        -35.453
+      ]
+    },
+    {
+      "id": "x2",
+      "type": "boundary",
+      "position": [
+        6.251,
+        35.453
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "main_1",
+      "road": "main",
+      "from": "c",
+      "to": "m1",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "main_2",
+      "road": "main",
+      "from": "c",
+      "to": "m2",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "cross_1",
+      "road": "cross",
+      "from": "c",
+      "to": "x1",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "cross_2",
+      "road": "cross",
+      "from": "c",
+      "to": "x2",
+      "geometry": {
+        "type": "line"
+      }
+    }
+  ]
+}

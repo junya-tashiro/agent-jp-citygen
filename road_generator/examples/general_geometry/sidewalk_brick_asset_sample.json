@@ -1,0 +1,30 @@
+{
+  "roads": [
+    {
+      "id": "brick_sample_road",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {"id": "west", "type": "boundary", "position": [-30, 0]},
+    {"id": "east", "type": "boundary", "position": [30, 0]}
+  ],
+  "edges": [
+    {
+      "id": "brick_sample_edge",
+      "road": "brick_sample_road",
+      "from": "west",
+      "to": "east",
+      "geometry": {"type": "line"},
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.82, "maintenance": 0.75, "health": 0.9, "seed": 8201},
+      "street_trees": {"enabled": true, "species": "keyaki", "density": 1.0, "seed": 8202},
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    }
+  ]
+}

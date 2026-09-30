@@ -1,0 +1,38 @@
+{
+  "roads": [
+    {"id": "priority", "road_class": "arterial", "speed_limit": 40, "lanes_each_way": 2, "sidewalks": "both"},
+    {"id": "stem", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "junction", "type": "priority_t_junction", "position": [0, 0], "crossings": ["east_west", "north_south"]},
+    {"id": "west", "type": "boundary", "position": [-75, 0]},
+    {"id": "east", "type": "boundary", "position": [75, 0]},
+    {"id": "stem_end", "type": "boundary", "position": [0, -65]}
+  ],
+  "edges": [
+    {
+      "id": "priority_west", "road": "priority", "from": "west", "to": "junction",
+      "geometry": {"type": "line"}, "median": true,
+      "bicycle_lane": true,
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true}, "street_trees": {"enabled": true, "random": true},
+      "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true
+    },
+    {
+      "id": "priority_east", "road": "priority", "from": "junction", "to": "east",
+      "geometry": {"type": "line"}, "median": true,
+      "bicycle_lane": true,
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true}, "street_trees": {"enabled": true, "random": true},
+      "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true
+    },
+    {
+      "id": "stem", "road": "stem", "from": "stem_end", "to": "junction",
+      "geometry": {"type": "line"}, "center_marking": "orange_solid",
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"random": true}, "street_trees": {"enabled": true, "random": true},
+      "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true,
+      "approaches": {"to": {"stop_control": true}}
+    }
+  ]
+}

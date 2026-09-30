@@ -1,0 +1,67 @@
+{
+  "roads": [
+    {
+      "id": "limit_main",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "limit_cross",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "minimum_radius_curve",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "limit_junction",
+      "type": "signalized_cross",
+      "position": [0, 0],
+      "name": "限界角交差点",
+      "roman_name": "Limit Angle Junction",
+      "crossings": ["east_west", "north_south"],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "none"
+    },
+    {"id": "limit_w", "type": "boundary", "position": [-40, 0]},
+    {"id": "limit_e", "type": "boundary", "position": [40, 0]},
+    {"id": "limit_sw", "type": "boundary", "position": [-6.94592710667721, -39.39231012048832]},
+    {"id": "limit_ne", "type": "boundary", "position": [6.94592710667721, 39.39231012048832]},
+    {"id": "curve_a", "type": "boundary", "position": [-40, 90]},
+    {"id": "curve_b", "type": "boundary", "position": [40, 90]}
+  ],
+  "edges": [
+    {"id": "limit_main_w", "road": "limit_main", "from": "limit_junction", "to": "limit_w", "geometry": {"type": "line"}, "tactile_paving": true},
+    {"id": "limit_main_e", "road": "limit_main", "from": "limit_junction", "to": "limit_e", "geometry": {"type": "line"}, "tactile_paving": true},
+    {"id": "limit_cross_sw", "road": "limit_cross", "from": "limit_junction", "to": "limit_sw", "geometry": {"type": "line"}, "tactile_paving": true},
+    {"id": "limit_cross_ne", "road": "limit_cross", "from": "limit_junction", "to": "limit_ne", "geometry": {"type": "line"}, "tactile_paving": true},
+    {
+      "id": "minimum_radius_curve_edge",
+      "road": "minimum_radius_curve",
+      "from": "curve_a",
+      "to": "curve_b",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [-15, 127.81817],
+        "control_to": [15, 127.81817]
+      },
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.82, "maintenance": 0.70, "health": 0.88, "seed": 7301},
+      "street_trees": {"enabled": true, "species": "keyaki", "density": 1.0, "seed": 7302},
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "roads": [
+    {
+      "id": "main",
+      "road_class": "local",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    },
+    {
+      "id": "cross",
+      "road_class": "local",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "c",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "一般角交差点",
+      "roman_name": "General Junction",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "right"
+    },
+    {
+      "id": "m1",
+      "type": "boundary",
+      "position": [
+        -35.863,
+        -3.138
+      ]
+    },
+    {
+      "id": "m2",
+      "type": "boundary",
+      "position": [
+        35.863,
+        -3.138
+      ]
+    },
+    {
+      "id": "x1",
+      "type": "boundary",
+      "position": [
+        -5.01,
+        -35.65
+      ]
+    },
+    {
+      "id": "x2",
+      "type": "boundary",
+      "position": [
+        5.01,
+        35.65
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "main_1",
+      "road": "main",
+      "from": "c",
+      "to": "m1",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true,
+      "median": true
+    },
+    {
+      "id": "main_2",
+      "road": "main",
+      "from": "c",
+      "to": "m2",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true,
+      "median": true
+    },
+    {
+      "id": "cross_1",
+      "road": "cross",
+      "from": "c",
+      "to": "x1",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true,
+      "median": true
+    },
+    {
+      "id": "cross_2",
+      "road": "cross",
+      "from": "c",
+      "to": "x2",
+      "geometry": {
+        "type": "line"
+      },
+      "guardrail": {
+        "sides": "both",
+        "exterior_color": "brown"
+      },
+      "planting": {
+        "random": true
+      },
+      "street_trees": {
+        "enabled": true,
+        "random": true
+      },
+      "bicycle_lane": true,
+      "curb_parking_prohibition": true,
+      "tactile_paving": true,
+      "median": true
+    }
+  ]
+}

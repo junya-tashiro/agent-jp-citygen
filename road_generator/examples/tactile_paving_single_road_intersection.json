@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {"id": "center", "type": "signalized_cross", "position": [0, 0], "name": "一丁目", "roman_name": "1-chome", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green", "exterior_color": "brown"},
+    {"id": "west", "type": "boundary", "position": [-28, 0]},
+    {"id": "east", "type": "boundary", "position": [28, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -28]},
+    {"id": "north", "type": "boundary", "position": [0, 28]}
+  ],
+  "edges": [
+    {"id": "west_arm", "from": "west", "to": "center", "lanes_each_way": 1, "sidewalks": "both", "tactile_paving": true},
+    {"id": "east_arm", "from": "center", "to": "east", "lanes_each_way": 1, "sidewalks": "both", "tactile_paving": true},
+    {"id": "south_arm", "from": "south", "to": "center", "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "north_arm", "from": "center", "to": "north", "lanes_each_way": 1, "sidewalks": "both"}
+  ]
+}

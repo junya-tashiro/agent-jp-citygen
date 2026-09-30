@@ -1,0 +1,49 @@
+{
+  "roads": [
+    {
+      "id": "local_road",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {"id": "west", "type": "boundary", "position": [-36, 0]},
+    {"id": "east", "type": "boundary", "position": [36, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -36]},
+    {"id": "north", "type": "boundary", "position": [0, 36]},
+    {
+      "id": "sample_cross",
+      "type": "signalized_cross",
+      "position": [0, 0],
+      "name": "一 丁 目",
+      "roman_name": "1-chome",
+      "crossings": ["east_west", "north_south"],
+      "signal_phase": "east_west_green",
+      "exterior_color": "brown"
+    }
+  ],
+  "edges": [
+    {
+      "id": "west_arm", "road": "local_road", "from": "west", "to": "sample_cross",
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.84, "maintenance": 0.72, "health": 0.90, "seed": 3101}
+    },
+    {
+      "id": "east_arm", "road": "local_road", "from": "sample_cross", "to": "east",
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.86, "maintenance": 0.70, "health": 0.89, "seed": 3102}
+    },
+    {
+      "id": "south_arm", "road": "local_road", "from": "south", "to": "sample_cross",
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.82, "maintenance": 0.74, "health": 0.91, "seed": 3103}
+    },
+    {
+      "id": "north_arm", "road": "local_road", "from": "sample_cross", "to": "north",
+      "guardrail": {"sides": "both", "exterior_color": "brown"},
+      "planting": {"density": 0.85, "maintenance": 0.71, "health": 0.90, "seed": 3104}
+    }
+  ]
+}

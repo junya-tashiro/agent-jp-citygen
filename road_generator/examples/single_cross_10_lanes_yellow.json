@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "west",
+      "type": "boundary",
+      "position": [-120, 0]
+    },
+    {
+      "id": "east",
+      "type": "boundary",
+      "position": [120, 0]
+    },
+    {
+      "id": "north",
+      "type": "boundary",
+      "position": [0, 120]
+    },
+    {
+      "id": "south",
+      "type": "boundary",
+      "position": [0, -120]
+    },
+    {
+      "id": "ten_lane_cross",
+      "type": "signalized_cross",
+      "position": [0, 0],
+      "name": "十車線",
+      "roman_name": "Ten-lane Cross",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "east_west_yellow",
+      "exterior_color": "white"
+    }
+  ],
+  "edges": [
+    {
+      "id": "west_road",
+      "from": "west",
+      "to": "ten_lane_cross",
+      "road_class": "arterial",
+      "speed_limit": 50,
+      "lanes_each_way": 10,
+      "sidewalks": "both"
+    },
+    {
+      "id": "east_road",
+      "from": "ten_lane_cross",
+      "to": "east",
+      "road_class": "arterial",
+      "speed_limit": 50,
+      "lanes_each_way": 10,
+      "sidewalks": "both"
+    },
+    {
+      "id": "north_road",
+      "from": "north",
+      "to": "ten_lane_cross",
+      "road_class": "arterial",
+      "speed_limit": 50,
+      "lanes_each_way": 10,
+      "sidewalks": "both"
+    },
+    {
+      "id": "south_road",
+      "from": "ten_lane_cross",
+      "to": "south",
+      "road_class": "arterial",
+      "speed_limit": 50,
+      "lanes_each_way": 10,
+      "sidewalks": "both"
+    }
+  ]
+}

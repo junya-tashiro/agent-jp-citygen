@@ -1,0 +1,25 @@
+{
+  "roads": [
+    {
+      "id": "hydrant_demo_road",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {"id": "west", "type": "boundary", "position": [-120, 0]},
+    {"id": "east", "type": "boundary", "position": [120, 0]}
+  ],
+  "edges": [
+    {
+      "id": "hydrant_demo_edge",
+      "road": "hydrant_demo_road",
+      "from": "west",
+      "to": "east",
+      "geometry": {"type": "line"},
+      "street_lights": false
+    }
+  ]
+}

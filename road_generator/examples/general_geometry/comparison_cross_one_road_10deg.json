@@ -1,0 +1,107 @@
+{
+  "roads": [
+    {
+      "id": "horizontal",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "crossing",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "center",
+      "type": "signalized_cross",
+      "position": [
+        0,
+        0
+      ],
+      "name": "比較交差点",
+      "roman_name": "Comparison",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown",
+      "vehicle_arrow": "none"
+    },
+    {
+      "id": "west",
+      "type": "boundary",
+      "position": [
+        -36,
+        0
+      ]
+    },
+    {
+      "id": "east",
+      "type": "boundary",
+      "position": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": "south",
+      "type": "boundary",
+      "position": [
+        -6.251,
+        -35.453
+      ]
+    },
+    {
+      "id": "north",
+      "type": "boundary",
+      "position": [
+        6.251,
+        35.453
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "horizontal_west",
+      "road": "horizontal",
+      "from": "center",
+      "to": "west",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "horizontal_east",
+      "road": "horizontal",
+      "from": "center",
+      "to": "east",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "crossing_south",
+      "road": "crossing",
+      "from": "center",
+      "to": "south",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "crossing_north",
+      "road": "crossing",
+      "from": "center",
+      "to": "north",
+      "geometry": {
+        "type": "line"
+      }
+    }
+  ]
+}

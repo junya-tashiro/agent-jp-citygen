@@ -1,0 +1,19 @@
+{
+  "roads": [
+    {"id": "east_west", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "angled", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "junction", "type": "signalized_cross", "position": [0, 0], "name": "斜交一一交差点", "roman_name": "Angled 1x1 Crossing", "crossings": ["east_west", "north_south"], "signal_phase": "group_a_green", "exterior_color": "brown", "vehicle_arrow": "none"},
+    {"id": "west", "type": "boundary", "position": [-60, 0]},
+    {"id": "east", "type": "boundary", "position": [60, 0]},
+    {"id": "southwest", "type": "boundary", "position": [-10.4189, -59.0885]},
+    {"id": "northeast", "type": "boundary", "position": [10.4189, 59.0885]}
+  ],
+  "edges": [
+    {"id": "west_arm", "road": "east_west", "from": "west", "to": "junction", "geometry": {"type": "line"}, "center_marking": "orange_solid", "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"seed": 9511}, "street_trees": {"enabled": true, "species": "keyaki", "seed": 9521}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "east_arm", "road": "east_west", "from": "junction", "to": "east", "geometry": {"type": "line"}, "center_marking": "orange_solid", "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"seed": 9512}, "street_trees": {"enabled": true, "species": "ginkgo", "seed": 9522}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "southwest_arm", "road": "angled", "from": "southwest", "to": "junction", "geometry": {"type": "line"}, "center_marking": "orange_solid", "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"seed": 9513}, "street_trees": {"enabled": true, "species": "keyaki", "seed": 9523}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true},
+    {"id": "northeast_arm", "road": "angled", "from": "junction", "to": "northeast", "geometry": {"type": "line"}, "center_marking": "orange_solid", "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"seed": 9514}, "street_trees": {"enabled": true, "species": "ginkgo", "seed": 9524}, "bicycle_lane": true, "curb_parking_prohibition": true, "tactile_paving": true}
+  ]
+}

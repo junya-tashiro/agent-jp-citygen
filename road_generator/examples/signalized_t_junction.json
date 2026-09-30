@@ -1,0 +1,100 @@
+{
+  "roads": [
+    {
+      "id": "main_road",
+      "road_class": "arterial",
+      "speed_limit": 40,
+      "lanes_each_way": 2,
+      "sidewalks": "both"
+    },
+    {
+      "id": "south_stem",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "west",
+      "type": "boundary",
+      "position": [-45, 0]
+    },
+    {
+      "id": "east",
+      "type": "boundary",
+      "position": [45, 0]
+    },
+    {
+      "id": "south",
+      "type": "boundary",
+      "position": [0, -45]
+    },
+    {
+      "id": "kasumigaseki_t",
+      "type": "signalized_t_junction",
+      "position": [0, 0],
+      "name": "中 央",
+      "roman_name": "Chuo",
+      "crossings": ["east_west", "north_south"],
+      "signal_phase": "east_west_green",
+      "exterior_color": "white"
+    }
+  ],
+  "edges": [
+    {
+      "id": "main_west",
+      "road": "main_road",
+      "from": "west",
+      "to": "kasumigaseki_t",
+      "median": true,
+      "planting": {
+        "density": 0.84,
+        "maintenance": 0.76,
+        "health": 0.91,
+        "seed": 1101
+      },
+      "street_trees": {
+        "species": "keyaki",
+        "density": 0.75,
+        "seed": 2101
+      }
+    },
+    {
+      "id": "main_east",
+      "road": "main_road",
+      "from": "kasumigaseki_t",
+      "to": "east",
+      "median": true,
+      "planting": {
+        "density": 0.88,
+        "maintenance": 0.72,
+        "health": 0.89,
+        "seed": 1102
+      },
+      "street_trees": {
+        "species": "keyaki",
+        "density": 0.75,
+        "seed": 2102
+      }
+    },
+    {
+      "id": "stem_south",
+      "road": "south_stem",
+      "from": "south",
+      "to": "kasumigaseki_t",
+      "planting": {
+        "density": 0.80,
+        "maintenance": 0.68,
+        "health": 0.90,
+        "seed": 1103
+      },
+      "street_trees": {
+        "species": "ginkgo",
+        "density": 0.65,
+        "seed": 2103
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"id": "junction", "type": "signalized_t_junction", "position": [0, 0], "name": "一丁目", "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green", "exterior_color": "brown"},
+    {"id": "west", "type": "boundary", "position": [-28, 0]},
+    {"id": "east", "type": "boundary", "position": [28, 0]},
+    {"id": "south", "type": "boundary", "position": [0, -28]}
+  ],
+  "edges": [
+    {"id": "through_west", "from": "west", "to": "junction", "lanes_each_way": 1, "sidewalks": "both", "tactile_paving": true},
+    {"id": "through_east", "from": "junction", "to": "east", "lanes_each_way": 1, "sidewalks": "both", "tactile_paving": true},
+    {"id": "stem", "from": "south", "to": "junction", "lanes_each_way": 1, "sidewalks": "both", "tactile_paving": true}
+  ]
+}

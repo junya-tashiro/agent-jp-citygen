@@ -1,0 +1,89 @@
+{
+  "roads": [
+    {
+      "id": "through",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    },
+    {
+      "id": "stem",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "t",
+      "type": "signalized_t_junction",
+      "position": [
+        0,
+        0
+      ],
+      "name": "斜め丁字路",
+      "roman_name": "Angled T",
+      "crossings": [
+        "east_west",
+        "north_south"
+      ],
+      "signal_phase": "group_a_green",
+      "exterior_color": "brown"
+    },
+    {
+      "id": "a",
+      "type": "boundary",
+      "position": [
+        -37.423,
+        -6.599
+      ]
+    },
+    {
+      "id": "b",
+      "type": "boundary",
+      "position": [
+        37.423,
+        -6.599
+      ]
+    },
+    {
+      "id": "s",
+      "type": "boundary",
+      "position": [
+        0,
+        -38
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "through_1",
+      "road": "through",
+      "from": "t",
+      "to": "a",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "through_2",
+      "road": "through",
+      "from": "t",
+      "to": "b",
+      "geometry": {
+        "type": "line"
+      }
+    },
+    {
+      "id": "stem_1",
+      "road": "stem",
+      "from": "t",
+      "to": "s",
+      "geometry": {
+        "type": "line"
+      }
+    }
+  ]
+}

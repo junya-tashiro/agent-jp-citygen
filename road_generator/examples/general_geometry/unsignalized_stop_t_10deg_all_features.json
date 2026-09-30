@@ -1,0 +1,17 @@
+{
+  "roads": [
+    {"id": "through", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "stem", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "junction", "type": "stop_t_junction", "position": [0, 0], "crossings": ["east_west", "north_south"]},
+    {"id": "west", "type": "boundary", "position": [-41.36, -7.29]},
+    {"id": "east", "type": "boundary", "position": [41.36, 7.29]},
+    {"id": "stem_end", "type": "boundary", "position": [7.29, -41.36]}
+  ],
+  "edges": [
+    {"id": "through_west", "road": "through", "from": "west", "to": "junction", "geometry": {"type": "line"}, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true}, "street_trees": {"enabled": true, "random": true}, "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true},
+    {"id": "through_east", "road": "through", "from": "junction", "to": "east", "geometry": {"type": "line"}, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true}, "street_trees": {"enabled": true, "random": true}, "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true},
+    {"id": "stem", "road": "stem", "from": "stem_end", "to": "junction", "geometry": {"type": "line"}, "guardrail": {"sides": "both", "exterior_color": "brown"}, "planting": {"random": true}, "street_trees": {"enabled": true, "random": true}, "curb_parking_prohibition": true, "tactile_paving": true, "street_lights": true, "approaches": {"to": {"stop_control": true}}}
+  ]
+}

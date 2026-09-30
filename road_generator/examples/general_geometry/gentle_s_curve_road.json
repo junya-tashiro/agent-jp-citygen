@@ -1,0 +1,48 @@
+{
+  "roads": [
+    {
+      "id": "road",
+      "road_class": "local",
+      "speed_limit": 30,
+      "lanes_each_way": 1,
+      "sidewalks": "both"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a",
+      "type": "boundary",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "b",
+      "type": "boundary",
+      "position": [
+        80,
+        0
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "road_edge",
+      "road": "road",
+      "from": "a",
+      "to": "b",
+      "geometry": {
+        "type": "cubic_bezier",
+        "control_from": [
+          24,
+          10
+        ],
+        "control_to": [
+          56,
+          -10
+        ]
+      }
+    }
+  ]
+}

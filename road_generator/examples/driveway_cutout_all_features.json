@@ -1,0 +1,21 @@
+{
+  "scene": { "time_of_day": "day" },
+  "roads": [{ "id": "main", "road_class": "local", "speed_limit": 40, "lanes_each_way": 2, "sidewalks": "both" }],
+  "nodes": [
+    { "id": "west", "type": "boundary", "position": [-80, 0] },
+    { "id": "east", "type": "boundary", "position": [80, 0] }
+  ],
+  "edges": [{
+    "id": "main_edge", "road": "main", "from": "west", "to": "east",
+    "geometry": { "type": "line" }, "center_marking": "orange_solid",
+    "guardrail": { "sides": "both", "exterior_color": "brown" },
+    "planting": { "random": true, "style": "clipped_hedge" },
+    "street_trees": { "enabled": true, "random": true, "species": "keyaki" },
+    "street_lights": true, "bicycle_lane": true,
+    "curb_parking_prohibition": true, "tactile_paving": true
+  }],
+  "components": [{
+    "id": "driveway_1", "type": "driveway_cutout",
+    "edge": "main_edge", "side": "left", "station": 80.0
+  }]
+}

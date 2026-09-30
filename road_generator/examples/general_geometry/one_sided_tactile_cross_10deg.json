@@ -1,0 +1,19 @@
+{
+  "roads": [
+    {"id": "tactile_road", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"},
+    {"id": "plain_road", "road_class": "local", "speed_limit": 30, "lanes_each_way": 1, "sidewalks": "both"}
+  ],
+  "nodes": [
+    {"id": "junction", "type": "signalized_cross", "position": [0, 0], "crossings": ["east_west", "north_south"], "signal_phase": "east_west_green"},
+    {"id": "west", "type": "boundary", "position": [-41.36, -7.29]},
+    {"id": "east", "type": "boundary", "position": [41.36, 7.29]},
+    {"id": "south", "type": "boundary", "position": [0, -42]},
+    {"id": "north", "type": "boundary", "position": [0, 42]}
+  ],
+  "edges": [
+    {"id": "tactile_west", "road": "tactile_road", "from": "west", "to": "junction", "geometry": {"type": "line"}, "tactile_paving": true, "street_lights": false},
+    {"id": "tactile_east", "road": "tactile_road", "from": "junction", "to": "east", "geometry": {"type": "line"}, "tactile_paving": true, "street_lights": false},
+    {"id": "plain_south", "road": "plain_road", "from": "south", "to": "junction", "geometry": {"type": "line"}, "street_lights": false},
+    {"id": "plain_north", "road": "plain_road", "from": "junction", "to": "north", "geometry": {"type": "line"}, "street_lights": false}
+  ]
+}

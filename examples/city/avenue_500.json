@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "seed": 19,
+  "bounds": [
+    -250,
+    -130,
+    250,
+    130
+  ],
+  "roads": [
+    {
+      "id": "avenue",
+      "points": [
+        [
+          -250,
+          0
+        ],
+        [
+          250,
+          0
+        ]
+      ],
+      "style": {
+        "lanes_each_way": 2,
+        "center_treatment": "median",
+        "median_width": "wide",
+        "speed_limit": 40
+      }
+    },
+    {
+      "id": "cross",
+      "points": [
+        [
+          0,
+          -90
+        ],
+        [
+          0,
+          90
+        ]
+      ],
+      "style": {
+        "lanes_each_way": 2,
+        "center_treatment": "median",
+        "median_width": "wide",
+        "speed_limit": 40
+      }
+    }
+  ],
+  "buildings": {
+    "count": 29
+  },
+  "placements": [
+    {
+      "id": "garage",
+      "key": "building_25",
+      "edge": "avenue_edge_1_1",
+      "station": 105,
+      "side": "left",
+      "seed": 19,
+      "design": {
+        "width": 38,
+        "depth": 42
+      }
+    },
+    {
+      "id": "coin",
+      "type": "coin_parking",
+      "width": 18,
+      "depth": 24,
+      "edge": "avenue_edge_2_2",
+      "station": 105,
+      "side": "left"
+    },
+    {
+      "id": "coin_south",
+      "type": "coin_parking",
+      "width": 22,
+      "depth": 18,
+      "edge": "avenue_edge_1_1",
+      "station": 45,
+      "side": "right"
+    }
+  ],
+  "subways": [
+    {
+      "id": "stairs",
+      "variant": "stairs",
+      "station_name": "都心",
+      "station_roman": "Toshin",
+      "width": 3,
+      "position": [
+        -110,
+        -13.399
+      ],
+      "rotation_degrees": 90,
+      "routes": [
+        {
+          "code": "M11",
+          "color": "#E53935"
+        }
+      ]
+    },
+    {
+      "id": "lift",
+      "variant": "elevator",
+      "station_name": "都心",
+      "station_roman": "Toshin",
+      "width": 3,
+      "position": [
+        105,
+        -13.399
+      ],
+      "rotation_degrees": 90,
+      "routes": [
+        {
+          "code": "M11",
+          "color": "#E53935"
+        }
+      ]
+    }
+  ]
+}
