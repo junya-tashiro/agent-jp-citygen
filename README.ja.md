@@ -8,59 +8,39 @@
 
 ![多様な建物、街路樹、歩道、点字ブロックを備えた生成都市の交差点](media/intersection_reverse.jpg)
 
-## エージェントと街を作る
+## 使い方：エージェントに街を頼む
 
-「200m四方に大通りと生活道路を配置し、信号なし交差点を一つ入れたい」といった要望を、コーディングエージェントに伝えて制作します。
-エージェントは要求JSONを編集し、共通のCLIで計画・検証・生成を行います。
-道路の制約や建物配置の計算は生成器が担当するため、街ごとにモデリングコードを書き直す必要はありません。
+このリポジトリをcloneし、ファイルの読み書きとローカルのコマンド実行ができるコーディングエージェントで、そのフォルダーを開いてください。
+あとは作りたい街を自然言語で伝えます。例えば、次のプロンプトをそのまま渡して始められます。
 
-**自然言語の要望 → エージェントが要求JSONを作成 → 配置計画・SVG地図 → Blenderで街を生成**
+```text
+docs/AGENT_WORKFLOW.mdを読み、このリポジトリを使って街を生成してください。
+
+200m四方くらいの日本風の街にしたいです。
+中央に片側2車線の大通りを一本、その周囲に片側1車線の道路を複数配置してください。
+信号のない十字路も最低一つ入れてください。
+歩道・点字ブロック・街路樹を設け、沿道には高層ビルと雑居ビルを混ぜてください。
+指定していない部分は適切に決めて構いません。
+
+まず実行環境を確認し、必要なツールや日本語フォントが不足していれば教えてください。
+既存の道路・配置ルールに従い、生成器の共通コードは変更しないでください。
+実現できない要望があれば報告してください。
+要求と生成結果はscenes/my_city/に保存してください。
+Blenderシーンと確認用画像を生成し、最後に保存先を教えてください。
+```
+
+エージェントが設定の作成、配置の検証、シーン生成まで進めます。
+生成された `.blend` ファイルをBlenderで開くか、確認用画像を見て、「大通りをもう少し広く」「カーブした道路を追加して」といった修正を続けて頼めます。
+街の要望を伝えるために、JSONの形式やCLIコマンドを覚える必要はありません。
+
+環境設定や手動操作の詳細は、[実行環境とCLIの直接利用](#実行環境とcliの直接利用)を参照してください。
+
+**街の要望 → エージェントが要求JSONを作成 → 配置の検証・SVG地図 → Blenderで街を生成**
 
 形状・素材・テクスチャはコードから生成し、外部のモデル・画像アセットを必要としません。
 日本語文字には利用者が用意するフォントを使用します。詳細は [依存とライセンス](docs/PROVENANCE.md)。
 本プロジェクトのモデリングと生成処理の実装は、Codexとの対話を通じて制作しています。
-利用時は特定のエージェントに依存せず、JSONとCLIを扱えるコーディングエージェントから操作できます。
-
-## まず試す
-
-必要環境: Python 3.10以降、Node.js 18以降、Blender 4.5 LTS。
-macOSで検証。その他OSはパスを指定できるが、実機検証は未実施。
-通常利用にnpm install、GUIサーバー、LLM APIキーは不要。
-
-```sh
-# 日本語フォントは利用条件を確認して自分で用意する。
-export CITY_FONT=/absolute/path/to/JapaneseFont.ttf
-# macOSの既定パス以外なら指定
-export BLENDER_BIN=/absolute/path/to/blender
-
-python3 city.py capabilities
-python3 city.py plan examples/city/central_200.json --output scenes/demo/plan.json
-python3 city.py preview scenes/demo/plan.json --output scenes/demo/output
-```
-
-`scenes/demo/output/city.blend`、`overview.png`、`street.png` が出力されます。
-画像不要なら `preview` の代わりに `build`。同じ計画・ファイルハッシュなら生成済みBlendを再利用します。
-同じ場所に異なる計画を出す際は `--replace` を明示するか、別の出力先を指定してください。
-
-## 上から見た地図
-
-`plan` と同時にSVG地図を出力します。道路・歩道・建物敷地と階数・駐車場・地下鉄入口・信号有無を、Blender起動前に確認できます。
-保存した計画からの再出力はPythonだけで行えます。
-
-```sh
-python3 city.py map scenes/demo/plan.json --output scenes/demo/map.svg
-```
-
-ブラウザーで開いて拡大できます。縮尺付きの配置概略図で、建物の屋根形状や路面標示は省略しています。
-
-## エージェントへ渡す例
-
-> docs/AGENT_WORKFLOW.mdに従って街を作ってください。
-> 200m四方で、中央に片側2車線の大通り一本、片側1車線の道路を複数。
-> 信号なし十字路を一つ入れ、高層ビルと雑居ビルを混ぜてください。
-> ライブラリ本体は変更せず、scenes/my_cityに計画と結果を保存してください。
-
-エージェントは要求JSONを編集します。自然言語を解釈する専用モデルは同梱しません。
+JSONとCLIを扱えるコーディングエージェントから利用できます。リポジトリ自体に自然言語を解釈する機能はありません。
 
 ## 都市を構成する機能
 
@@ -118,6 +98,40 @@ python3 city.py map scenes/demo/plan.json --output scenes/demo/map.svg
 - [要求・計画の形式](docs/SCENE_FORMAT.md)
 - [接続方式とコスト](docs/TOOL_DESIGN.md)
 - [検証記録](docs/VALIDATION.md)
+
+## 実行環境とCLIの直接利用
+
+通常はエージェントが以下のコマンドを実行します。環境設定や、CLIを自分で操作する場合に参照してください。
+
+必要環境: Python 3.10以降、Node.js 18以降、Blender 4.5 LTS。
+macOSで検証。その他OSはパスを指定できるが、実機検証は未実施。
+通常利用にnpm install、GUIサーバー、LLM APIキーは不要。
+
+```sh
+# 日本語フォントは利用条件を確認して自分で用意する。
+export CITY_FONT=/absolute/path/to/JapaneseFont.ttf
+# macOSの既定パス以外なら指定
+export BLENDER_BIN=/absolute/path/to/blender
+
+python3 city.py capabilities
+python3 city.py plan examples/city/central_200.json --output scenes/demo/plan.json
+python3 city.py preview scenes/demo/plan.json --output scenes/demo/output
+```
+
+`scenes/demo/output/city.blend`、`overview.png`、`street.png` が出力されます。
+画像不要なら `preview` の代わりに `build`。同じ計画・ファイルハッシュなら生成済みBlendを再利用します。
+同じ場所に異なる計画を出す際は `--replace` を明示するか、別の出力先を指定してください。
+
+## 上から見た地図
+
+`plan` と同時にSVG地図を出力します。道路・歩道・建物敷地と階数・駐車場・地下鉄入口・信号有無を、Blender起動前に確認できます。
+保存した計画からの再出力はPythonだけで行えます。
+
+```sh
+python3 city.py map scenes/demo/plan.json --output scenes/demo/map.svg
+```
+
+ブラウザーで開いて拡大できます。縮尺付きの配置概略図で、建物の屋根形状や路面標示は省略しています。
 
 ## 開発
 

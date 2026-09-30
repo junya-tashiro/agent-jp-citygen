@@ -8,59 +8,40 @@ Buildings, surface parking, and subway entrances are placed along the road netwo
 
 ![A generated city intersection with varied buildings, trees, sidewalks, and tactile paving](media/intersection_reverse.jpg)
 
-## Build a city with an agent
+## Quick start: prompt your agent
 
-Describe a city to your coding agent, such as a 200 m square area with an avenue, local roads, and an unsignalized intersection.
-The agent edits a request JSON and uses a shared CLI to plan, validate, and build the scene.
-The generator handles road constraints and building placement, so each scene does not require new modeling code.
+Clone this repository and open its folder in a coding agent that can read files and run local commands.
+Then describe the city you want. You can copy this prompt and change the size, roads, and other details:
 
-**Natural-language request → agent-authored JSON → placement plan and SVG map → Blender city scene**
+```text
+Read docs/AGENT_WORKFLOW.md and use this repository to generate a city.
+
+Create a Japanese-style city covering roughly 200 m × 200 m.
+Place one central avenue with two lanes in each direction, plus several
+smaller roads with one lane in each direction. Include at least one
+unsignalized four-way intersection. Add sidewalks, tactile paving,
+street trees, and a mix of towers and tenant buildings along the roads.
+Choose sensible defaults for anything I have not specified.
+
+Check the local environment and tell me if a required tool or Japanese
+font is missing. Follow the existing road and placement constraints;
+keep the shared generator unchanged and report any unmet requirements.
+Save the request and results under scenes/my_city/.
+Generate the Blender scene and preview images, and tell me where to find them.
+```
+
+The agent prepares the configuration, checks the layout, and runs the generator.
+Open the resulting `.blend` file in Blender, or review the preview images and ask the agent for changes—for example, “make the central avenue wider” or “add a curved road.”
+You do not need to learn the JSON format or CLI commands to describe a city.
+
+For setup and manual commands, see [environment and direct CLI use](#environment-and-direct-cli-use).
+
+**Your description → agent-authored JSON → checked layout and SVG map → Blender city scene**
 
 Geometry, materials, and textures are generated from code; no external model or image assets are required.
 Japanese lettering uses a font supplied by the user. See [dependencies and licensing](docs/PROVENANCE.md).
 The modeling and generation code was developed through conversations with Codex.
-Usage is agent-independent: any coding agent that can edit JSON and run CLI commands can operate the generator.
-
-## Quick start
-
-Requirements: Python 3.10+, Node.js 18+, and Blender 4.5 LTS.
-Tested on macOS. Executable paths are configurable for other systems, but those systems have not been tested.
-Normal use requires no npm installation, GUI server, or LLM API key.
-
-```sh
-# Supply a Japanese font with suitable usage permissions.
-export CITY_FONT=/absolute/path/to/JapaneseFont.ttf
-# Set this if Blender is not at the default macOS path.
-export BLENDER_BIN=/absolute/path/to/blender
-
-python3 city.py capabilities
-python3 city.py plan examples/city/central_200.json --output scenes/demo/plan.json
-python3 city.py preview scenes/demo/plan.json --output scenes/demo/output
-```
-
-Outputs include `scenes/demo/output/city.blend`, `overview.png`, and `street.png`.
-Use `build` instead of `preview` to skip images. Matching plans and file hashes allow an existing Blend to be reused.
-Use a different output directory or explicitly pass `--replace` when building a different plan into the same directory.
-
-## Top-down maps
-
-`plan` also writes an SVG map showing roads, sidewalks, building sites and floor counts, parking, subway entrances, and signal control.
-Export a map from a saved plan using Python alone:
-
-```sh
-python3 city.py map scenes/demo/plan.json --output scenes/demo/map.svg
-```
-
-Open the SVG in a browser to zoom in. It is a scaled layout diagram, not a roof-outline or road-marking drawing.
-
-## Example agent prompt
-
-> Follow docs/AGENT_WORKFLOW.md to create a city.
-> Use a 200 m square area with one central avenue carrying two lanes in each direction and several roads carrying one lane in each direction.
-> Include one unsignalized four-way intersection and a mix of towers and tenant buildings.
-> Keep the shared library unchanged and save the request and outputs under scenes/my_city.
-
-The agent edits the request JSON. A dedicated natural-language model is not bundled.
+Any coding agent that can edit JSON and run CLI commands can operate the generator; the repository itself does not interpret natural language.
 
 ## City features
 
@@ -116,6 +97,40 @@ Each asset README documents its parameters, dimensions, origin, and generation m
 - [Request and plan format](docs/SCENE_FORMAT.md)
 - [Tool interface and cost](docs/TOOL_DESIGN.md)
 - [Validation](docs/VALIDATION.md)
+
+## Environment and direct CLI use
+
+The agent normally runs these commands for you. Use this section to configure the environment or operate the CLI directly.
+
+Requirements: Python 3.10+, Node.js 18+, and Blender 4.5 LTS.
+Tested on macOS. Executable paths are configurable for other systems, but those systems have not been tested.
+Normal use requires no npm installation, GUI server, or LLM API key.
+
+```sh
+# Supply a Japanese font with suitable usage permissions.
+export CITY_FONT=/absolute/path/to/JapaneseFont.ttf
+# Set this if Blender is not at the default macOS path.
+export BLENDER_BIN=/absolute/path/to/blender
+
+python3 city.py capabilities
+python3 city.py plan examples/city/central_200.json --output scenes/demo/plan.json
+python3 city.py preview scenes/demo/plan.json --output scenes/demo/output
+```
+
+Outputs include `scenes/demo/output/city.blend`, `overview.png`, and `street.png`.
+Use `build` instead of `preview` to skip images. Matching plans and file hashes allow an existing Blend to be reused.
+Use a different output directory or explicitly pass `--replace` when building a different plan into the same directory.
+
+## Top-down maps
+
+`plan` also writes an SVG map showing roads, sidewalks, building sites and floor counts, parking, subway entrances, and signal control.
+Export a map from a saved plan using Python alone:
+
+```sh
+python3 city.py map scenes/demo/plan.json --output scenes/demo/map.svg
+```
+
+Open the SVG in a browser to zoom in. It is a scaled layout diagram, not a roof-outline or road-marking drawing.
 
 ## Development
 
