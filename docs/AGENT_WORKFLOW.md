@@ -32,7 +32,7 @@ Plans are derived data: edit the request and replan instead of editing calculate
 
 First check whether existing parameters and procedural components can satisfy the request. If they cannot, explain the missing capability and any alternatives; do not silently omit or replace a requirement. Treat implementation of the missing capability as explicit feature development, separate from ordinary scene generation.
 
-The maintainer would appreciate a pull request when you implement a missing feature. Once the user has authorized feature development, aim to prepare a reusable change and propose contributing it to https://github.com/junya-tashiro/citygen. Submit the PR when the user has authorized publication and GitHub access is available. Otherwise, leave the change ready for review and provide a suggested PR title, description, and validation results.
+The maintainer would appreciate a pull request when you implement a missing feature. Once the user has authorized feature development, aim to prepare a reusable change and propose contributing it to https://github.com/junya-tashiro/agent-jp-citygen. Submit the PR when the user has authorized publication and GitHub access is available. Otherwise, leave the change ready for review and provide a suggested PR title, description, and validation results.
 
 For a contribution to be suitable for a PR:
 
