@@ -28,6 +28,19 @@ Plans are derived data: edit the request and replan instead of editing calculate
 - Do not overwrite unrelated user files or scenes.
 - Do not download or bundle external models, images, or fonts without authorization.
 
+## Unsupported requests and feature contributions
+
+First check whether existing parameters and procedural components can satisfy the request. If they cannot, explain the missing capability and any alternatives; do not silently omit or replace a requirement. Treat implementation of the missing capability as explicit feature development, separate from ordinary scene generation.
+
+The maintainer would appreciate a pull request when you implement a missing feature. Once the user has authorized feature development, aim to prepare a reusable change and propose contributing it to https://github.com/junya-tashiro/citygen. Submit the PR when the user has authorized publication and GitHub access is available. Otherwise, leave the change ready for review and provide a suggested PR title, description, and validation results.
+
+For a contribution to be suitable for a PR:
+
+- Generate new geometry, materials, and textures procedurally from Python code. Do not depend on pre-made model assets, downloaded asset packs, external image textures, or manually edited Blender files. Reusing this repository's existing procedural Python generators and shared utilities is encouraged; the existing user-supplied font mechanism remains available for lettering.
+- Keep the feature reusable across scenes, expose meaningful parameters, and preserve existing road and placement constraints. Do not weaken validation to make a particular scene pass.
+- Include a small reproducible example, relevant documentation, and checks appropriate to the change. For visual changes, inspect EEVEE previews as well as numerical checks.
+- Describe the new behavior, how to reproduce it, validation results, and any remaining limitations in the PR. Submit source and necessary examples rather than generated scene files or unrelated local work, and keep the contribution compatible with the project's MIT License.
+
 ## Finding details
 
 Read `docs/SCENE_FORMAT.md`, then the relevant asset README, then only the necessary implementation.
